@@ -1,0 +1,17 @@
+<html>
+<head>
+<script type="text/javascript" src="hsubti.min.js"></script>
+</head>
+<body>
+<script>
+function call(e){
+	console.log(e);
+}
+function openFile(t){
+	var file=t.files[0];
+	File2Webvtt(file,call);
+}
+</script>
+<input type="file" id="load_file" name="file" onchange="openFile(this)" accept=".srt,.vtt,.lrc">
+</body>
+</html>
